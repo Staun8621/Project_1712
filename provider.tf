@@ -7,9 +7,17 @@ terraform {
   }
 }
 
+backend "remote" {
+    organiztion = "terra_mosa"
+
+    workspaces {
+        name = "Project_1712"
+    }
+}
+
 provider "azurerm" {
   # Configuration options
   features{
-    
+
   }
 }
