@@ -5,7 +5,6 @@ terraform {
       version = "3.36.0"
     }
   }
-}
 
 backend "remote" {
     organiztion = "terra_mosa"
@@ -14,6 +13,11 @@ backend "remote" {
         name = "Project_1712"
     }
 }
+
+
+}
+
+
 
 provider "azurerm" {
   # Configuration options
